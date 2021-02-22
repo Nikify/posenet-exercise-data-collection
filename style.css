@@ -1,0 +1,42 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  canvas {
+    display: block;
+  }
+  
+  div, input {
+    position: absolute;
+  }
+  
+  .button {
+    height: 50px;
+    width: 100px;
+    background-color: lightgrey;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  #buttonCollect {
+    top: 480px;
+  }
+  
+  #buttonExport {
+    top: 680px;
+  }
+  
+  #counter {
+    top: 480px;
+    left: 150px;
+    font-size: 36pt;
+  }
+  
+  #label {
+    top: 600px;
+  }
+  
+  #labeltext {
+    top: 580px;
+  }
