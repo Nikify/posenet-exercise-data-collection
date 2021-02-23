@@ -1,6 +1,6 @@
 # Collect sequential skeletal pose data for exercises
 ## :clapper: Collecting data
-1. Run `/index.html` on a local server or through the p5.js Web Editor: https://editor.p5js.org/Nikify/sketches/yXA5qmePw.
+1. Open `/index.html` on a local server or run it through the p5.js Web Editor: https://editor.p5js.org/Nikify/sketches/yXA5qmePw.
 1. Allow access to webcam.
 1. Verify that PoseNet has successfully loaded (success message will be logged in the terminal).
 1. Enter the label/name of an exercise and press `Collect data`.
@@ -11,8 +11,15 @@
 1. Export your data as JSON by pressing `Export data`.
 
 ## :wrench: Configuring data collection
-The time required to collect exercise data can be changed by modifying `const collectingTimeMs = 3000;` in `/sketch.js` 
-The interval with which exercise data is collected can be changed by modifying `const collectingIntervalMs = 200;` in `/sketch.js` 
+The time required to collect exercise data can be changed in `/sketch.js` by modifying the constant `collectingTimeMs`:
+```javascript
+const collectingTimeMs = 3000; //time period for collecting data points (in ms)
+``` 
+
+The interval with which exercise data is collected can also be changed in `/sketch.js` by modifying the constant `collectingIntervalMs`:
+```javascript
+const collectingIntervalMs = 200; //interval between collection of data points (in ms)
+```
 
 ## :memo: Converting data from JSON to NumPy
 1. Install Python and NymPy
